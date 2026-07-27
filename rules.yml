@@ -1,0 +1,11 @@
+- id: accessibility-must
+  scope: ui
+  severity: must
+  description: "UI components must satisfy accessibility checks per project context"
+  validator: "axe-ci || manual-check"
+
+- id: testing-must
+  scope: all
+  severity: must
+  description: "New features must include automated tests that run in CI"
+  validator: "npm test"
