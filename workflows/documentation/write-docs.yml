@@ -1,0 +1,13 @@
+id: workflows.documentation.write-docs
+title: Write Operational or API Docs
+purpose: "Create concise, verifiable, and runnable documentation for teams and AI agents."
+required_skills:
+  - skills.documentation
+related_rules:
+  - rules.documentation
+steps:
+  - "Define the audience and the minimal runnable example."
+  - "Include verification steps and test commands for examples."
+  - "Link to relevant decision records and code locations."
+outputs:
+  - "Docs with examples, test snippets, and links to ADRs or issue references."

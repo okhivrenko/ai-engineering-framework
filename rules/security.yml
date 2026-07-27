@@ -1,0 +1,16 @@
+id: rules.security
+title: Security by Default
+priority: high
+description: "Design and implement features with secure defaults."
+rationale: |
+  Security vulnerabilities cause data breaches and damage trust. Early secure defaults reduce risk.
+examples:
+  - "Validate and sanitize all untrusted inputs."
+  - "Store secrets in managed secret stores; never commit secrets."
+validation: |
+  - Run dependency vulnerability scans and secret detection tools in CI.
+related_skills:
+  - skills.security
+  - skills.backend
+  - skills.infrastructure
+  - skills.devops

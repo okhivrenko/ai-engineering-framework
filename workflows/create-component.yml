@@ -1,0 +1,21 @@
+id: workflows.create_component
+title: Create Component
+description: "Workflow to create a reusable UI component with tests and documentation."
+required_skills:
+  - skills.react
+  - skills.accessibility
+  - skills.testing
+relevant_rules:
+  - rules.accessibility
+  - rules.testing
+  - rules.documentation
+outputs:
+  - component_file
+  - test_file
+  - decision_record
+steps:
+  - name: confirm acceptance criteria
+  - name: design API surface
+  - name: implement component
+  - name: write tests
+  - name: document usage and verification

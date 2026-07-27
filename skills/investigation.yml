@@ -1,0 +1,18 @@
+id: skills.investigation
+title: Investigation & Root Cause Analysis
+when: "Applies to post-incident analysis, feature regressions, and complex unexpected behaviors."
+decisions: |
+  - Gather timelines, commits, configuration changes, and metric deltas before guessing causes.
+  - Preserve evidence and avoid destructive investigations in production.
+  - Produce a concise RCA with mitigations and follow-up tasks. 
+best_practices:
+  - "Use blameless postmortems and track action items."
+  - "Correlate logs, traces, and metrics to identify causal paths."
+common_mistakes:
+  - "Over-attributing a single root cause without considering systemic factors."
+  - "Losing context by not recording investigation findings."
+examples:
+  - "An RCA that includes timeline, contributing factors, corrective actions, and verification steps."
+related_rules:
+  - rules.documentation
+  - rules.observability

@@ -1,0 +1,19 @@
+id: workflows.backend.implement-endpoint
+title: Implement Backend Endpoint
+purpose: "Create a new backend endpoint with clear validation, error handling, and tests."
+required_skills:
+  - skills.backend
+  - skills.api-design
+  - skills.testing
+related_rules:
+  - rules.security
+  - rules.testing
+  - rules.documentation
+steps:
+  - "Define API contract (request, response, errors) and add to API docs or spec."
+  - "Implement handler that validates input and delegates to domain/service layer."
+  - "Implement service logic in small, testable functions."
+  - "Add unit and integration tests, including contract tests for the API."
+  - "Document usage and any migration or data-impact considerations."
+outputs:
+  - "Endpoint code, service layer tests, API spec update, and decision record if schema changes are non-trivial."

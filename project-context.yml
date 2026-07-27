@@ -1,0 +1,31 @@
+name: "Example Next.js Project"
+short_description: "A sample Next.js app demonstrating accessible components"
+tech_stack:
+  - nextjs
+  - react
+  - javascript
+run_command: "npm run dev"
+test_command: "npm test"
+components_dir: "src/components"
+deployment_target: "vercel"
+primary_user_personas:
+  - persona: "end user"
+    needs: "view and interact with tabular data"
+top_priorities:
+  - accessibility
+  - testing
+  - maintainability
+non_functional_requirements:
+  accessibility_level: "WCAG2.1-AA"
+  max_time_to_interactive: "1500ms"
+auth_options:
+  allowed: ["google-oauth"]
+  secrets_policy: "managed-store"
+acceptance_criteria:
+  - id: data-table-accessible
+    description: "DataTable component renders tabular data accessibly and has unit tests asserting semantic markup and keyboard focus behavior"
+    tests:
+      - "renders a table with a caption and column headers"
+      - "rows are focusable and keyboard navigable"
+open_questions: []
+agent_trust: "low"  # default conservative setting

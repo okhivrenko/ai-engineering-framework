@@ -1,0 +1,18 @@
+id: skills.testing
+title: Testing
+when: "Applies to all code that will be maintained or relied upon in production."
+decisions: |
+  - Define test pyramid expectations: unit, integration, end-to-end.
+  - Tests should be deterministic, fast where possible, and isolated from external state.
+  - Use contract tests for cross-service interfaces.
+best_practices:
+  - "Prefer small, focused unit tests for logic and integration tests for boundary behavior."
+  - "Mock external dependencies and provide fixtures for reproducible tests."
+  - "Include accessibility assertions for UI components when applicable."
+common_mistakes:
+  - "Slow, brittle end-to-end suites that block CI."
+  - "Over-mocking leading to tests that don't catch integration issues."
+examples:
+  - "A component test that verifies keyboard interactions and ARIA attributes."
+related_rules:
+  - rules.testing

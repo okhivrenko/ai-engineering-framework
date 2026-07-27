@@ -1,0 +1,17 @@
+id: workflows.debugging.investigate-bug
+title: Investigate & Fix a Bug
+purpose: "A focused triage and fix workflow to produce a minimal, test-covered fix."
+required_skills:
+  - skills.debugging
+  - skills.testing
+  - skills.investigation
+related_rules:
+  - rules.testing
+  - rules.documentation
+steps:
+  - "Triage: reproduce, scope, and collect traces/logs."
+  - "Isolate the minimal failing scenario and write a regression test."
+  - "Implement fix in smallest scope and run full test suite."
+  - "Document the fix and any long-term remediation tasks."
+outputs:
+  - "Bug fix, regression test, and short investigation note."

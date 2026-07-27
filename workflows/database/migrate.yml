@@ -1,0 +1,16 @@
+id: workflows.database.migrate
+title: Database Migration Workflow
+purpose: "Safely introduce schema changes and data migrations."
+required_skills:
+  - skills.database
+  - skills.testing
+related_rules:
+  - rules.testing
+  - rules.documentation
+steps:
+  - "Design migration to be backward-compatible when possible."
+  - "Write reversible migration scripts and small, idempotent backfills."
+  - "Test migrations in staging with production-ish data volumes if possible."
+  - "Document migration plan and rollback steps."
+outputs:
+  - "Migration scripts, backfill jobs, and verification instructions."

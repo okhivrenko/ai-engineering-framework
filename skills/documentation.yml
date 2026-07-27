@@ -1,0 +1,18 @@
+id: skills.documentation
+title: Documentation
+when: "Applies to public APIs, architectural decisions, on-boarding guides, and operational runbooks."
+decisions: |
+  - Decide the intended audience and level of detail for each document.
+  - Keep docs close to the code and ensure examples are runnable.
+  - Treat docs as living artifacts with ownership and PRs. 
+best_practices:
+  - "Include minimal examples and verification steps for APIs and features."
+  - "Link decision records to code locations and PRs."
+common_mistakes:
+  - "Overwriting docs without versioning or change rationale."
+  - "Stale examples that no longer run."
+examples:
+  - "A README section that shows the canonical way to run tests and add a new component."
+related_rules:
+  - rules.documentation
+  - rules.testing

@@ -1,0 +1,19 @@
+id: skills.api-design
+title: API Design
+when: "Applies to designing public or internal APIs (HTTP, gRPC, message contracts)."
+decisions: |
+  - Design explicit request/response contracts and version them.
+  - Provide clear error formats and status codes.
+  - Consider consumer ergonomics and backward compatibility.
+best_practices:
+  - "Document examples and typical workflows for each endpoint."
+  - "Provide client-friendly abstractions or SDKs when appropriate."
+common_mistakes:
+  - "Leaking internal representations or large unpaginated responses."
+  - "Unclear authentication/authorization expectations."
+examples:
+  - "An API spec that includes sample requests, response schemas, paging, and error codes."
+related_rules:
+  - rules.documentation
+  - rules.testing
+  - rules.security

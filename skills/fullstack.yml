@@ -1,0 +1,19 @@
+id: skills.fullstack
+title: Full Stack Engineering
+when: "Applies when work spans both frontend and backend: integrations, end-to-end features, dataflow, and deployment concerns."
+decisions: |
+  - Coordinate API contracts and component contracts early.
+  - Choose where logic belongs: client-side vs server-side, considering security, performance, and UX.
+  - Define clear deployment and testing strategy for end-to-end validation.
+best_practices:
+  - "Prefer thin clients and fat domain services unless offline UX demands client-side logic."
+  - "Automate end-to-end tests for critical user flows."
+common_mistakes:
+  - "Duplicating validation logic in many places without shared schemas."
+  - "Assuming network latency is negligible for UX-sensitive features."
+examples:
+  - "Implementing OAuth flows requires server-side token exchange and secure storage; UI handles redirects and token display only."
+related_rules:
+  - rules.testing
+  - rules.security
+  - rules.documentation

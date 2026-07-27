@@ -1,0 +1,18 @@
+id: workflows.fullstack.add-authentication
+title: Add Authentication (Full Stack)
+purpose: "Integrate a secure authentication flow involving UI and backend components."
+required_skills:
+  - skills.fullstack
+  - skills.security
+  - skills.backend
+  - skills.frontend
+related_rules:
+  - rules.security
+  - rules.documentation
+steps:
+  - "Select auth flow (OAuth, OIDC, password) and document threat model."
+  - "Implement server-side token exchange and secure storage."
+  - "Implement client-side flow with proper redirect handling and token refresh."
+  - "Add end-to-end tests for the auth flow and unit tests for critical helpers."
+outputs:
+  - "Auth endpoints, client integration, tests, and a Decision Record for chosen approach."

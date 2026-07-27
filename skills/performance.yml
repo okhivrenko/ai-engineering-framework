@@ -1,0 +1,19 @@
+id: skills.performance
+title: Performance Engineering
+when: "Applies when feature changes affect latency, throughput, or resource usage visible to users or operators."
+decisions: |
+  - Measure before optimizing; establish performance budgets.
+  - Prefer algorithmic improvements and cached results over micro-optimizations.
+  - Design graceful degradation strategies for overloaded systems.
+best_practices:
+  - "Instrument code paths with lightweight metrics."
+  - "Use caching strategically and invalidate intentionally."
+  - "Benchmark representative workloads in CI or perf labs."
+common_mistakes:
+  - "Premature optimization without profiling data."
+  - "Ignoring tail latencies and cold-start costs."
+examples:
+  - "Add a server-side cache for an expensive aggregation and include cache miss/hit metrics."
+related_rules:
+  - rules.performance
+  - rules.testing

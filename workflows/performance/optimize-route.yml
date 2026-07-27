@@ -1,0 +1,17 @@
+id: workflows.performance.optimize-route
+title: Optimize Performance-Critical Route
+purpose: "A focused workflow to improve latency and resource use for a critical path."
+required_skills:
+  - skills.performance
+  - skills.backend
+  - skills.database
+related_rules:
+  - rules.performance
+  - rules.testing
+steps:
+  - "Benchmark baseline and capture representative traces."
+  - "Identify hotspots via profiling and query analysis."
+  - "Implement algorithmic improvements or caching with metrics."
+  - "Validate with repeatable benchmarks and add regression alerts."
+outputs:
+  - "Benchmarks, code changes, monitoring dashboards, and verification steps."

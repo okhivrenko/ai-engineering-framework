@@ -1,0 +1,22 @@
+component_naming:
+  pattern: "PascalCase"
+  location: "src/components"
+  example: "DataTable.jsx"
+file_structure:
+  components: "src/components"
+  tests: "__tests__ or *.test.(js|jsx)"
+prop_naming:
+  pattern: "camelCase"
+  examples: ["dataSource", "onRowClick"]
+testing:
+  test_command: "npm test"
+  required: true
+  coverage_threshold: 70
+accessibility:
+  required: true
+  standard: "WCAG2.1-AA"
+  checks: ["semantic elements", "aria-attributes", "keyboard-navigation", "color-contrast"]
+pr_requirements:
+  require_decision_id: true
+  require_acceptance_criteria: true
+  require_tests: true

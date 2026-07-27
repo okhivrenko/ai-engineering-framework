@@ -1,0 +1,18 @@
+id: skills.code-review
+title: Code Review
+when: "Applies when changes are proposed for merging into shared branches."
+decisions: |
+  - Focus reviews on correctness, design decisions, and test coverage rather than micro-style issues.
+  - Require a decision record for non-trivial architecture or API changes.
+  - Use checklist-driven reviews to ensure common concerns are covered (security, accessibility, tests). 
+best_practices:
+  - "Small, focused PRs are easier to review."
+  - "Automate trivial checks and reserve human attention for judgment calls."
+common_mistakes:
+  - "Overloading PR descriptions without structured acceptance criteria."
+  - "Leaving TODOs in merged code without follow-up."
+examples:
+  - "A PR template that requires a short summary, motivation, tests added, and Decision Record reference."
+related_rules:
+  - rules.documentation
+  - rules.testing

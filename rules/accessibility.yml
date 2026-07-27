@@ -1,0 +1,17 @@
+id: rules.accessibility
+title: Accessibility
+priority: high
+description: "UI and user-facing features must meet the project's accessibility standard."
+rationale: |
+  Accessibility ensures the product is usable by people with diverse needs and reduces legal and support risk.
+examples:
+  - "Use semantic <table>, <caption>, <th scope='col'> for tabular data."
+  - "Provide keyboard focus and ARIA labels for interactive controls."
+validation: |
+  - Run automated accessibility checks (axe, pa11y) and include results in CI.
+  - Manual keyboard navigation checks for critical UI.
+related_skills:
+  - skills.accessibility
+  - skills.frontend
+  - skills.testing
+  - skills.documentation

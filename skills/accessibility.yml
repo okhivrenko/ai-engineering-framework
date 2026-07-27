@@ -1,0 +1,15 @@
+id: skills.accessibility
+title: Accessibility Skill
+when: "Apply when implementing user-facing UI components"
+engineering_decisions: |
+  - "Use semantic markup and ARIA only when necessary"
+  - "Prefer native controls over custom widgets"
+best_practices:
+  - "Provide keyboard navigation and focus management"
+  - "Include captions/alt text for media"
+common_mistakes:
+  - "Relying solely on visual cues"
+examples:
+  - "DataTable example in examples/components"
+related_rules:
+  - rules.accessibility

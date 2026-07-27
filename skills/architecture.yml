@@ -1,0 +1,20 @@
+id: skills.architecture
+title: Software Architecture
+when: "Applies during system design, high-level componentization, and long-lived boundaries between modules."
+decisions: |
+  - Define clear boundaries and contracts between subsystems.
+  - Prefer explicit dependencies and stable interfaces.
+  - Optimize for evolutionary change: small, safe refactors and clear migration paths.
+best_practices:
+  - "Model data ownership and flows explicitly."
+  - "Favor composition and small modules over deep inheritance hierarchies."
+  - "Document decisions through ADRs tied to code locations and tests."
+common_mistakes:
+  - "Over-architecting for hypothetical scale without measured requirements."
+  - "Hidden coupling through global state or implicit contracts."
+examples:
+  - "A service boundary that exposes a versioned API and includes migration tests."
+related_rules:
+  - rules.documentation
+  - rules.testing
+  - rules.security

@@ -1,0 +1,18 @@
+id: skills.infrastructure
+title: Infrastructure
+when: "Applies to provisioning, networking, and runtime configuration for services and data stores."
+decisions: |
+  - Prefer immutable infrastructure and declarative provisioning.
+  - Keep environment-specific configuration separate from code.
+  - Define backup, restore, and disaster recovery plans for stateful services.
+best_practices:
+  - "Use infra-as-code with a clear module structure and minimal ambient permissions."
+  - "Tag resources with ownership and environment metadata."
+common_mistakes:
+  - "Embedding secrets in infrastructure code."
+  - "Manual infrastructure changes that drift from source."
+examples:
+  - "A declarative template that provisions a database with automatic backups and restricted network access."
+related_rules:
+  - rules.security
+  - rules.documentation

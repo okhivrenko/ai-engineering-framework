@@ -1,0 +1,19 @@
+id: skills.database
+title: Database & Persistence
+when: "Applies to data modeling, migrations, queries, and durability concerns."
+decisions: |
+  - Model ownership of data and life-cycle operations explicitly.
+  - Use migrations that are backward-compatible and testable.
+  - Prefer simple schemas and avoid premature denormalization without measured need.
+best_practices:
+  - "Write reversible migrations and include data migration tests."
+  - "Index based on query patterns and monitor slow queries."
+common_mistakes:
+  - "Large transactional operations without chunking or resumability."
+  - "Relying on application code for referential integrity when DB constraints are available."
+examples:
+  - "A migration that adds a new column with a safe default and a follow-up job to backfill large datasets."
+related_rules:
+  - rules.testing
+  - rules.documentation
+  - rules.performance

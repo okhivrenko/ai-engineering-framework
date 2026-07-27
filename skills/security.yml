@@ -1,0 +1,19 @@
+id: skills.security
+title: Security Engineering
+when: "Applies to any software surface that processes or stores data, or integrates with external systems."
+decisions: |
+  - Treat external inputs as untrusted; validate early and consistently.
+  - Centralize secrets management and avoid baked-in credentials.
+  - Apply least privilege for services and credentials.
+best_practices:
+  - "Define threat models for new features and document mitigations."
+  - "Use proven crypto libraries and avoid custom implementations."
+  - "Fail safely: log minimal sensitive data and surface actionable alerts."
+common_mistakes:
+  - "Inconsistent authentication/authorization checks across endpoints."
+  - "Implicit trust between internal services without mutual TLS or IAM."
+examples:
+  - "An endpoint requires authorization checks at the handler and service layers and returns 403 for unauthorized access."
+related_rules:
+  - rules.security
+  - rules.documentation
