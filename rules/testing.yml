@@ -1,0 +1,14 @@
+id: rules.testing
+title: Testable by Design
+priority: high
+description: "Features must be designed to be verifiable with automated tests."
+rationale: |
+  Automated tests provide confidence, enable refactoring, and reduce regressions.
+examples:
+  - "Write unit tests for pure logic and integration tests for API flows."
+validation: |
+  - Ensure tests run with `npm test` and include test files alongside code or in __tests__.
+related_skills:
+  - skills.testing
+  - skills.react
+  - skills.nextjs

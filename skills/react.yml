@@ -1,0 +1,18 @@
+id: skills.react
+title: React
+when: "Applies when the project uses React/Next.js for UI components"
+decisions: |
+  - "Prefer functional components and hooks for new components"
+  - "Keep components small and focused; prefer composition over inheritance"
+best_practices:
+  - "Use semantic HTML elements"
+  - "Expose minimal props and avoid over-configurable components"
+common_mistakes:
+  - "Putting business logic in components instead of hooks or services"
+  - "Lack of accessibility attributes for interactive elements"
+examples:
+  - "See examples/components/DataTable.jsx"
+related_rules:
+  - rules.accessibility
+  - rules.testing
+  - rules.documentation

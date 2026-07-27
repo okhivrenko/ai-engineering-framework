@@ -1,0 +1,12 @@
+id: rules.documentation
+title: Documentation with Purpose
+priority: medium
+description: "Document the why, how, and verification steps for key decisions and public APIs."
+rationale: |
+  Documentation reduces onboarding time, clarifies intent, and enables AI systems to reason about design.
+examples:
+  - "API docs with example request/response and authentication details."
+validation: |
+  - Ensure public APIs and decision records include short usage examples and verification steps.
+related_skills:
+  - skills.documentation
