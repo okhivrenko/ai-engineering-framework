@@ -10,3 +10,5 @@ validation: |
   - Ensure public APIs and decision records include short usage examples and verification steps.
 related_skills:
   - skills.documentation
+  - skills.devops
+  - skills.code-review

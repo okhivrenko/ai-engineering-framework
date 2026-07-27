@@ -1,0 +1,15 @@
+id: workflows.security.hardening
+title: Security Hardening
+purpose: "Checklist-driven hardening for a feature or service before merge."
+required_skills:
+  - skills.security
+  - skills.devops
+related_rules:
+  - rules.security
+steps:
+  - "Run dependency vulnerability scans and secret detection."
+  - "Verify authentication and authorization at all boundaries."
+  - "Ensure secrets are in managed stores and not in repo."
+  - "Add minimal monitoring and alerting for new privilege escalations or failures."
+outputs:
+  - "Security checklist artefact attached to PR and remediation tasks if issues found."

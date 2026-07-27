@@ -1,0 +1,16 @@
+id: workflows.api.design-api
+title: Design an API Endpoint
+purpose: "Design a consumer-friendly, versionable API with clear contracts and errors."
+required_skills:
+  - skills.api-design
+  - skills.documentation
+related_rules:
+  - rules.documentation
+  - rules.testing
+steps:
+  - "Draft API contract with request/response examples and error cases."
+  - "Validate contract with potential consumers or via contract tests."
+  - "Implement API and test against the contract."
+  - "Document authentication, rate limits, and versioning strategy."
+outputs:
+  - "API spec, tests, and documentation."

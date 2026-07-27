@@ -1,0 +1,22 @@
+id: skills.frontend
+title: Frontend Engineering
+when: "Applies to any user-facing UI implementation (web, mobile, desktop). Technology-agnostic guidance for building accessible, performant, and maintainable UIs."
+decisions: |
+  - Choose semantic UI primitives over presentation-only elements.
+  - Define clear component responsibilities: rendering, state composition, and side-effect isolation.
+  - Prefer composition and small reusable primitives; keep styling and behavior separable.
+best_practices:
+  - "Use semantic HTML or platform-native controls for accessibility."
+  - "Define a design-token system for colors, spacing, and typography."
+  - "Document component contract: inputs, outputs, and accessibility guarantees."
+common_mistakes:
+  - "Mixing business logic with rendering code."
+  - "Overly generic components that are hard to test."
+  - "Ignoring keyboard and assistive technology support."
+examples:
+  - "A DataTable component that exposes a small API (columns, data, onSort) and handles focus management and ARIA attributes internally."
+related_rules:
+  - rules.accessibility
+  - rules.testing
+  - rules.performance
+  - rules.documentation

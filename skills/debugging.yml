@@ -1,0 +1,19 @@
+id: skills.debugging
+title: Debugging & Troubleshooting
+when: "Applies when diagnosing runtime failures, regressions, or performance anomalies."
+decisions: |
+  - Reproduce the issue locally or in an isolated environment with recorded inputs.
+  - Add minimal, targeted telemetry and logging to capture context.
+  - Roll forward with a safe fix if rollback is hazardous and a quick mitigation is available.
+best_practices:
+  - "Collect structured logs, request IDs, and traces for correlated analysis."
+  - "Write repro tests when a bug is understood to prevent regression."
+common_mistakes:
+  - "Making large unrelated changes while debugging."
+  - "Removing logs or metrics that are frequently used by operators."
+examples:
+  - "A triage checklist: reproduce -> collect traces -> bisect -> test fix -> record decision."
+related_rules:
+  - rules.documentation
+  - rules.testing
+  - rules.observability

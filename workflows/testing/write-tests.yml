@@ -1,0 +1,15 @@
+id: workflows.testing.write-tests
+title: Write Tests for New Feature
+purpose: "A pragmatic test-plan to provide confidence quickly and sustainably."
+required_skills:
+  - skills.testing
+  - skills.devops
+related_rules:
+  - rules.testing
+steps:
+  - "Identify critical paths and write fast unit tests for pure logic."
+  - "Add integration tests for boundaries (DB, API)."
+  - "Add minimal end-to-end tests for user-visible flows if necessary."
+  - "Ensure tests run in CI and add flakiness mitigation strategies."
+outputs:
+  - "Test suite with clear run commands and guidance for maintenance."

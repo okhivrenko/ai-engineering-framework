@@ -12,8 +12,8 @@ Included artifacts for the MVP:
 - docs/ — project vision and roadmap (context for maintainers)
 
 Usage:
-1. Copy these artifacts into a project root (Next.js works well for the MVP).
+1. Copy these artifacts into a project root for any modern web or service project.
 2. Open an AI coding assistant in the project and ask a single request (e.g., "Create an accessible DataTable component").
-3. The agent should read project-context.yml and conventions.yml and generate artifacts that align with the project's constraints.
+3. The agent should read project-context.yml, conventions.yml, and the domain skills to make engineering decisions consistent with the project's constraints.
 
 This repository contains the minimal, focused MVP. For v0.2 we will add validators and CI integration to enforce rules automatically.

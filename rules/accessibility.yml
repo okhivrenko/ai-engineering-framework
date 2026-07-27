@@ -12,5 +12,6 @@ validation: |
   - Manual keyboard navigation checks for critical UI.
 related_skills:
   - skills.accessibility
-  - skills.react
-  - skills.nextjs
+  - skills.frontend
+  - skills.testing
+  - skills.documentation

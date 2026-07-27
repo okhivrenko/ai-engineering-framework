@@ -1,0 +1,16 @@
+id: workflows.devops.setup-ci
+title: Setup CI for the Project
+purpose: "Establish a minimal, fast CI pipeline that enforces basic quality gates."
+required_skills:
+  - skills.devops
+  - skills.testing
+related_rules:
+  - rules.testing
+  - rules.documentation
+steps:
+  - "Run build and unit tests on every PR."
+  - "Run linting and basic static analysis."
+  - "Publish test artifacts and test reports for CI runs."
+  - "Protect main branch with passing checks and review requirements."
+outputs:
+  - "CI workflow files and documentation for contributors."

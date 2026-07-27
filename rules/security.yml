@@ -11,5 +11,6 @@ validation: |
   - Run dependency vulnerability scans and secret detection tools in CI.
 related_skills:
   - skills.security
-  - skills.nodejs
-  - skills.react
+  - skills.backend
+  - skills.infrastructure
+  - skills.devops

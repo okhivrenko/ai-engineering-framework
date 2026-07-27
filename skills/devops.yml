@@ -1,0 +1,18 @@
+id: skills.devops
+title: DevOps & CI/CD
+when: "Applies when delivering code to environments and automating verification, deployment, and operations tasks."
+decisions: |
+  - Define a minimal CI pipeline that verifies build, tests, and basic linting on every PR.
+  - Use environment parity and reproducible builds for reliability.
+  - Automate rollbacks and safe deployment strategies (blue/green, canary) when needed.
+best_practices:
+  - "Fail fast in CI with clear error messages and links to remediation steps."
+  - "Keep deploy scripts idempotent and parameterized."
+common_mistakes:
+  - "Complex deploy orchestration without observability or easy rollback."
+  - "Treating CI as optional or flaky."
+examples:
+  - "A GitHub Action that runs unit tests and lints, produces an artifact, and triggers a staging deployment on merge."
+related_rules:
+  - rules.testing
+  - rules.documentation

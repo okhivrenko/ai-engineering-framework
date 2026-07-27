@@ -10,5 +10,6 @@ validation: |
   - Ensure tests run with `npm test` and include test files alongside code or in __tests__.
 related_skills:
   - skills.testing
-  - skills.react
-  - skills.nextjs
+  - skills.backend
+  - skills.frontend
+  - skills.devops

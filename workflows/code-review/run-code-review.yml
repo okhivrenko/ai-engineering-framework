@@ -1,0 +1,15 @@
+id: workflows.codereview.run-code-review
+title: Run a Code Review
+purpose: "Structured checklist and expectations for reviewers and authors."
+required_skills:
+  - skills.code-review
+  - skills.documentation
+related_rules:
+  - rules.documentation
+  - rules.testing
+steps:
+  - "Author: Add motivation, changes summary, tests, and Decision Record if needed."
+  - "Reviewer: Verify acceptance criteria, tests, security and accessibility checkboxes."
+  - "Merge only after automated checks pass and at least one approving review."
+outputs:
+  - "Merged PR with Decision Record and passing CI."

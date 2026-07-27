@@ -1,0 +1,20 @@
+id: skills.backend
+title: Backend Engineering
+when: "Applies to services, APIs, and backend processes responsible for business logic, data access, and integrations."
+decisions: |
+  - Prefer explicit interfaces for service boundaries (API contracts, message schemas).
+  - Validate and sanitize all external input at the boundary.
+  - Design for idempotency and observable failure modes.
+best_practices:
+  - "Keep business logic in domain services, separate from transport/adapters."
+  - "Use small, composable modules with clear responsibilities."
+  - "Document API contracts and error shapes."
+common_mistakes:
+  - "Leaking implementation details through APIs."
+  - "Insufficient input validation and unclear error handling."
+examples:
+  - "An HTTP endpoint that delegates to a service layer and returns well-typed error envelopes."
+related_rules:
+  - rules.security
+  - rules.testing
+  - rules.documentation

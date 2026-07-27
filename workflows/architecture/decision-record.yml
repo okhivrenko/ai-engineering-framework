@@ -1,0 +1,14 @@
+id: workflows.architecture.decision-record
+title: Create Architecture Decision Record
+purpose: "Capture important architectural choices and their rationale in a lightweight, reviewable format."
+required_skills:
+  - skills.architecture
+  - skills.documentation
+related_rules:
+  - rules.documentation
+steps:
+  - "Summarize the decision, alternatives considered, and trade-offs."
+  - "Link to code, tests, and any relevant issue or PR."
+  - "Define verification steps and metrics to evaluate the decision."
+outputs:
+  - "An ADR file in decision-records/ and a PR referencing it."

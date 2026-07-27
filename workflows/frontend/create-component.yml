@@ -1,0 +1,19 @@
+id: workflows.frontend.create-component
+title: Create Frontend Component
+purpose: "Guided steps for creating accessible, testable, and documented frontend components across technologies."
+required_skills:
+  - skills.frontend
+  - skills.accessibility
+  - skills.testing
+related_rules:
+  - rules.accessibility
+  - rules.testing
+  - rules.documentation
+steps:
+  - "Specify component contract: props/inputs, events/outputs, responsibilities."
+  - "Implement rendering with semantic primitives and accessibility attributes."
+  - "Isolate business logic into testable units or hooks/services."
+  - "Write unit tests for logic and integration tests for interaction and accessibility."
+  - "Add documentation: usage example, accessibility guarantees, and test commands."
+outputs:
+  - "Component file(s), tests, and a short decision record if non-trivial choices were made."

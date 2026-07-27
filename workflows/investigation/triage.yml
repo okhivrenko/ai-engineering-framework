@@ -1,0 +1,14 @@
+id: workflows.investigation.triage
+title: Triage Incident or Regression
+purpose: "Quickly determine severity, impact, and scope of a reported problem."
+required_skills:
+  - skills.investigation
+  - skills.observability
+related_rules:
+  - rules.documentation
+steps:
+  - "Gather timeline, affected services, and user impact."
+  - "Assign priority and collect required evidence for deeper analysis."
+  - "Create follow-up tasks and assign ownership for RCA."
+outputs:
+  - "Triage note, priority, and assigned investigation owner."
